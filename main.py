@@ -65,8 +65,10 @@ p = figure (
 
 for i in range(1):
     cost = []
-    for j in range(5):
+    for j in range(1, 6):
         cost.append(l[i][j])
+    print(l[i][0])
+    print(cost)
     p.line(
         y=cost,
         x=dates,
