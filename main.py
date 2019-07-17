@@ -16,8 +16,6 @@ l = []
 for i in range(1, len(data_frame)): 
     l.append(data_frame.iloc[i])
 
-print(l[0][0])
-
 dates = ["2014 / 2015","2015 / 2016","2016 / 2017","2017 / 2018","2018 / 2019"]
 
 '''# List of all the fields 
@@ -39,7 +37,7 @@ output_file('index.html', title='example data')
 # Add plot
 
 p = figure (
-    x_range=len(l[0])-1,
+    x_range=dates,
     plot_width = 800,
     plot_height= 600,
     title = "Plot Title",
