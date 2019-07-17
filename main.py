@@ -63,26 +63,33 @@ p = figure (
 
 #p = figure(width=500, height=300, x_axis_type="datetime") 
 
-'''for i in range(1):
-    cost = []
+for i in range(2):
+    cost = [[], [], [], [], []]
     for j in range(1, 6):
-        cost.append(l[i][j])
+        cost[i].append(l[i][j])
     print(l[i][0])
-    print(cost)
-    print(dates)
-    p.line(
+    print(cost[i])
+    '''p.line(
         y=cost,
         x=dates,
-        legend="temp"
+        legend=str(i)
     )
     cost.clear()'''
 
-cost = ['6481', '6658', '6695', '6826', '7016']
-p.line(
+#cost = ['6481', '6658', '6695', '6826', '7016']
+
+for i in range(2):
+    p.line(
+        y=cost[i],
+        x=dates,
+        legend=str(i)
+    )
+
+'''p.line(
     y=cost,
     x=dates,
     legend="line"
-)
+)'''
 '''p.line(
     y=cost,
     x=date,
