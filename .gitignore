@@ -2,3 +2,4 @@
 *.xlsx
 Pipfile
 3710000301-eng.csv
+Pipfile.lock
