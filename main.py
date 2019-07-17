@@ -1,19 +1,45 @@
 import numpy as np
 from bokeh.plotting import figure, output_file, show
+from bokeh.models import ColumnDataSource
 import pandas
 
 # Read in csv
-data_frame = pandas.read_csv('sample.csv')
+data_frame = pandas.read_csv('ontario-data.csv')
 
-field = data_frame['field']
+'''field = data_frame['field']
 date = data_frame['date']
-cost = data_frame['cost']
+cost = data_frame['cost']'''
+
+l = []
+
+# Makes a list of data for each field
+for i in range(1, len(data_frame)): 
+    l.append(data_frame.iloc[i])
+
+print(l[0][0])
+
+dates = ["2014 / 2015","2015 / 2016","2016 / 2017","2017 / 2018","2018 / 2019"]
+
+'''# List of all the fields 
+l = list(data_frame['Field of study'])
+l.pop(0)
+l.pop(0)
+
+print(data_frame.iloc[1])'''
+
+'''data = data_frame.iloc[3]
+cost = data["2014 / 2015"]
+
+print(data)
+print(cost)'''
+
 
 output_file('index.html', title='example data')
 
 # Add plot
+
 p = figure (
-    x_range=date,
+    x_range=len(l[0])-1,
     plot_width = 800,
     plot_height= 600,
     title = "Plot Title",
@@ -22,6 +48,16 @@ p = figure (
     tools=""
 )
 
+'''p = figure (
+    x_range=date,
+    plot_width = 800,
+    plot_height= 600,
+    title = "Plot Title",
+    x_axis_label = "Date",
+    y_axis_label= "Cost",
+    tools=""
+)'''
+
 # Render glyph
 #p.line(x, y, legend="Field 1", line_width=2)
 #p.line(date, cost, legend = "field")
@@ -29,8 +65,18 @@ p = figure (
 
 #p = figure(width=500, height=300, x_axis_type="datetime") 
 
-              
-p.line(
+for i in range(1):
+    cost = []
+    for j in range(5):
+        cost.append(l[i][j])
+    p.line(
+        y=cost,
+        x=dates,
+        legend="temp"
+    )
+    cost.clear()
+
+'''p.line(
     y=cost,
     x=date,
     legend="total"
@@ -39,7 +85,7 @@ p.line(
     y=cost,
     x=date,
     legend="education"
-)
+)'''
 
 
 # Show results 
