@@ -32,7 +32,7 @@ print(data)
 print(cost)'''
 
 
-output_file('index.html', title='example data')
+output_file('index.html', title='temp')
 
 # Add plot
 
@@ -63,19 +63,26 @@ p = figure (
 
 #p = figure(width=500, height=300, x_axis_type="datetime") 
 
-for i in range(1):
+'''for i in range(1):
     cost = []
     for j in range(1, 6):
         cost.append(l[i][j])
     print(l[i][0])
     print(cost)
+    print(dates)
     p.line(
         y=cost,
         x=dates,
         legend="temp"
     )
-    cost.clear()
+    cost.clear()'''
 
+cost = ['6481', '6658', '6695', '6826', '7016']
+p.line(
+    y=cost,
+    x=dates,
+    legend="line"
+)
 '''p.line(
     y=cost,
     x=date,
