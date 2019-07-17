@@ -41,5 +41,6 @@ p.line(
     legend="education"
 )
 
+
 # Show results 
 show(p)
