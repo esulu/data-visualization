@@ -1,15 +1,11 @@
 import numpy as np
-
 from bokeh.plotting import figure, output_file, show
 import pandas
-
-def datetime(x):
-    return np.array(x, dtype=np.datetime64)
 
 # Read in csv
 data_frame = pandas.read_csv('sample.csv')
 
-##field = data_frame["field"]
+field = data_frame['field']
 date = data_frame['date']
 cost = data_frame['cost']
 
@@ -29,9 +25,20 @@ p = figure (
 # Render glyph
 #p.line(x, y, legend="Field 1", line_width=2)
 #p.line(date, cost, legend = "field")
+
+
+#p = figure(width=500, height=300, x_axis_type="datetime") 
+
+              
 p.line(
     y=cost,
-    x=date
+    x=date,
+    legend="total"
+)
+p.line(
+    y=cost,
+    x=date,
+    legend="education"
 )
 
 # Show results 
