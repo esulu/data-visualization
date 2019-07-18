@@ -64,8 +64,9 @@ p = figure (
 #p = figure(width=500, height=300, x_axis_type="datetime") 
 
 cost = [[], [], [], [], []]
+data_size = len(l)-1
 
-for i in range(2):
+for i in range(data_size):
     for j in range(1, 6):
         cost[i].append(l[i][j])
     #print(l[i][0])
@@ -79,7 +80,7 @@ for i in range(2):
 
 #cost = ['6481', '6658', '6695', '6826', '7016']
 
-for i in range(2):
+for i in range(data_size):
     print(l[i][0])
     print(cost[i])
     p.line(
