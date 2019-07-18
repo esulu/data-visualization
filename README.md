@@ -9,4 +9,6 @@ Note: currently a work in progress and data still needs to be cited
 -[ ] Have different colours 
 -[ ] Show the name only on hover
 -[ ] Add proper tools
+-[ ] Change the thickness of the lines
+-[ ] Optimize the code
 -[ ] Cite the data
