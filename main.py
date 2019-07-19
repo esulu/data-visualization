@@ -63,7 +63,6 @@ p.line(
         y='cost',
         x='date',
         #legend=l[i][0],
-        legend='temp',
         source=source
     )
 
