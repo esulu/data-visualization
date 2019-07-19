@@ -13,6 +13,13 @@ field_list = source.data['field'].tolist()
 cost_list = source.data['cost'].tolist()
 date_list = source.data['date'].tolist()
 
+# Elements in each list
+n = 5
+
+final = [cost_list[i * n:(i + 1) * n] for i in range((len(cost_list) + n - 1) // n )]  
+print(cost_list)
+print(final)
+
 '''print(data_list)
 print(cost_list)
 print(date_list)'''
