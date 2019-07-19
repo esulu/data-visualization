@@ -1,6 +1,6 @@
 import numpy as np
-from bokeh.plotting import figure, output_file, show, ColumnDataSource
-from bokeh.models import ColumnDataSource
+from bokeh.plotting import figure, output_file, show, save, ColumnDataSource
+from bokeh.models import ColumnDataSource, HoverTool
 import pandas
 
 # Read in csv
@@ -64,5 +64,21 @@ p.line(
         legend='temp',
         source=source
     )
+
+# Add Tooltips
+hover = HoverTool()
+hover.tooltips = """
+    <div>
+        <h3>@field</h3>
+        <div><strong>Cost: </strong>@cost</div>
+        <div><strong>Year: </strong>@date</div>
+    <div
+"""
+
+p.add_tools(hover)
+
 # Show results 
-show(p)
+#show(p)
+
+# Save file
+save(p)
