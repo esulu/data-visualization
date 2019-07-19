@@ -9,13 +9,13 @@ df = pandas.read_csv('sample.csv')
 # Create ColumnDataSource from the data frame
 source = ColumnDataSource(df)
 
-data_list = source.data['field'].tolist()
+field_list = source.data['field'].tolist()
 cost_list = source.data['cost'].tolist()
 date_list = source.data['date'].tolist()
 
-print(data_list)
+'''print(data_list)
 print(cost_list)
-print(date_list)
+print(date_list)'''
 
 '''l = []
 
@@ -61,11 +61,18 @@ for i in range(data_size):
     )'''
 
 # Problem: Making one line, so it connects all sections
-p.line(
+'''p.line(
         y='cost',
         x='date',
         source=source
-    )
+    )'''
+
+# Problem: Multi line required a list of lists for the xs and ys
+p.multi_line(
+    xs= date_list, 
+    ys = cost_list,
+    legend="line"
+)
 
 # Add Tooltips
 hover = HoverTool()
