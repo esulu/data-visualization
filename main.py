@@ -59,10 +59,10 @@ for i in range(data_size):
         legend=l[i][0]
     )'''
 
+# Problem: Making one line, so it connects all sections
 p.line(
         y='cost',
         x='date',
-        #legend=l[i][0],
         source=source
     )
 
