@@ -43,7 +43,7 @@ p = figure (
     title = "Plot Title",
     x_axis_label = "Date",
     y_axis_label= "Cost",
-    #tools=""
+    tools="pan,wheel_zoom,save"
 )
 
 '''p = figure (
