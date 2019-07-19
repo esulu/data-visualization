@@ -70,7 +70,7 @@ hover = HoverTool()
 hover.tooltips = """
     <div>
         <h3>@field</h3>
-        <div><strong>Cost: </strong>@cost</div>
+        <div><strong>Cost: $</strong>@cost</div>
         <div><strong>Year: </strong>@date</div>
     <div
 """
