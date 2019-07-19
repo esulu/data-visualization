@@ -7,7 +7,8 @@ Note: currently a work in progress and data still needs to be cited
 ### Checklist
 - [x] Finish base code
 - [ ] Have different colours 
-- [ ] Show the name only on hover
+- [x] Show the name on hover
+- [ ] Hide fields that appear on the side
 - [x] Add proper tools
 - [ ] Change the thickness of the lines
 - [ ] Optimize the code
