@@ -4,13 +4,13 @@ from bokeh.models import ColumnDataSource
 import pandas
 
 # Read in csv
-data_frame = pandas.read_csv('ontario-data.csv')
+data_frame = pandas.read_csv('sample.csv')
 
 # Create ColumnDataSource from the data frame
 source = ColumnDataSource(data_frame)
 
-data_list = source.data['Field of study'].tolist()
-cost_list = source.data['2014 / 2015'].tolist()
+data_list = source.data['field'].tolist()
+cost_list = source.data['cost'].tolist()
 
 print(data_list)
 print(cost_list)
@@ -40,7 +40,7 @@ p = figure (
 # Render glyph
 
 #p = figure(width=500, height=300, x_axis_type="datetime") 
-
+'''
 data_size = len(l)-1
 cost = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []]
 
@@ -50,7 +50,7 @@ for i in range(data_size):
 
 #cost = ['6481', '6658', '6695', '6826', '7016']
 
-'''for i in range(data_size):
+for i in range(data_size):
     p.line(
         y=cost[i],
         x=dates,
@@ -58,8 +58,8 @@ for i in range(data_size):
     )'''
 
 p.line(
-        y='Field of study',
-        x='2014 / 2015',
+        y='cost',
+        x='date',
         #legend=l[i][0],
         legend='temp',
         source=source
