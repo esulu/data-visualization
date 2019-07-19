@@ -19,9 +19,6 @@ n = 5
 final_cost = [cost_list[i * n:(i + 1) * n] for i in range((len(cost_list) + n - 1) // n )]  
 final_date = [date_list[i * n:(i + 1) * n] for i in range((len(date_list) + n - 1) // n )]  
 
-print(final_cost)
-print(final_date)
-
 '''print(data_list)
 print(cost_list)
 print(date_list)'''
@@ -70,18 +67,17 @@ for i in range(data_size):
     )'''
 
 # Problem: Making one line, so it connects all sections
-'''p.line(
+p.line(
         y='cost',
         x='date',
         source=source
-    )'''
+    )
 
 # Problem: Multi line required a list of lists for the xs and ys
-p.multi_line(
+'''p.multi_line(
     xs= final_date, 
     ys = final_cost,
-    legend="line"
-)
+)'''
 
 # Add Tooltips
 hover = HoverTool()
