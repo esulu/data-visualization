@@ -16,9 +16,11 @@ date_list = source.data['date'].tolist()
 # Elements in each list
 n = 5
 
-final = [cost_list[i * n:(i + 1) * n] for i in range((len(cost_list) + n - 1) // n )]  
-print(cost_list)
-print(final)
+final_cost = [cost_list[i * n:(i + 1) * n] for i in range((len(cost_list) + n - 1) // n )]  
+final_date = [date_list[i * n:(i + 1) * n] for i in range((len(date_list) + n - 1) // n )]  
+
+print(final_cost)
+print(final_date)
 
 '''print(data_list)
 print(cost_list)
@@ -76,8 +78,8 @@ for i in range(data_size):
 
 # Problem: Multi line required a list of lists for the xs and ys
 p.multi_line(
-    xs= date_list, 
-    ys = cost_list,
+    xs= final_date, 
+    ys = final_cost,
     legend="line"
 )
 
