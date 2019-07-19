@@ -4,10 +4,10 @@ from bokeh.models import ColumnDataSource, HoverTool
 import pandas
 
 # Read in csv
-data_frame = pandas.read_csv('sample.csv')
+df = pandas.read_csv('sample.csv')
 
 # Create ColumnDataSource from the data frame
-source = ColumnDataSource(data_frame)
+source = ColumnDataSource(df)
 
 data_list = source.data['field'].tolist()
 cost_list = source.data['cost'].tolist()
@@ -20,8 +20,8 @@ print(date_list)
 '''l = []
 
 # Makes a list of data for each field
-for i in range(1, len(data_frame)): 
-    l.append(data_frame.iloc[i])'''
+for i in range(1, len(df)): 
+    l.append(df.iloc[i])'''
 
 dates = ["2014 / 2015","2015 / 2016","2016 / 2017","2017 / 2018","2018 / 2019"]
 
@@ -42,6 +42,7 @@ p = figure (
 # Render glyph
 
 #p = figure(width=500, height=300, x_axis_type="datetime") 
+
 '''
 data_size = len(l)-1
 cost = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []]
