@@ -11,24 +11,26 @@ source = ColumnDataSource(data_frame)
 
 data_list = source.data['field'].tolist()
 cost_list = source.data['cost'].tolist()
+date_list = source.data['date'].tolist()
 
 print(data_list)
 print(cost_list)
+print(date_list)
 
-l = []
+'''l = []
 
 # Makes a list of data for each field
 for i in range(1, len(data_frame)): 
     l.append(data_frame.iloc[i])
 
-dates = ["2014 / 2015","2015 / 2016","2016 / 2017","2017 / 2018","2018 / 2019"]
+dates = ["2014 / 2015","2015 / 2016","2016 / 2017","2017 / 2018","2018 / 2019"]'''
 
 output_file('index.html', title='temp')
 
 # Add plot
 
 p = figure (
-    x_range=dates,
+    x_range=date_list%4,
     plot_width = 800,
     plot_height= 600,
     title = "Plot Title",
