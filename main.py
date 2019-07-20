@@ -44,7 +44,7 @@ for i in range(len(field_list)):
         source=source2,
         #legend = field_list[i],
         color = (Category20[len(field)/5])[i],
-        line_width=2
+        line_width=3
     )
 
 # Add Tooltips
