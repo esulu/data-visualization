@@ -1,4 +1,4 @@
-### Data Visualization
+# Data Visualization
 
 Visualization of data using the Bokeh library
 
@@ -7,7 +7,7 @@ Statistics Canada.  [Table  37-10-0003-01   Canadian undergraduate tuition fees 
 
 Note: Only the data for Ontario is being used in this project
 
-### Checklist
+#### Checklist
 - [x] Finish base code
 - [x] Have different colours 
 - [x] Show the name on hover
