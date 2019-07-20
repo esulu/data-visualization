@@ -3,9 +3,11 @@
 This project is a means of converting the data of tuition fees of Ontario universities and colleges into an easily readable figure. The chart uses data from the 2014/2015 to the 2018/2019 school years. The Bokeh and pandas libraries are used to make the visualization of the project. 
 
 Chart: 
+
 ![alt text](https://github.com/esulu/data-visualization/blob/master/img/img1.png)
 
 Using the zoom tool: 
+
 ![alt text](https://github.com/esulu/data-visualization/blob/master/img/img2.png)
 
 ### Installation Process
