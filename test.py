@@ -19,6 +19,10 @@ field_list = df.field.unique()
 #dates = date.tolist()
 dates = ["2014 / 2015","2015 / 2016","2016 / 2017","2017 / 2018","2018 / 2019"]
 
+'''dates_list = dates.tolist()
+date_set = set(dates)
+dates = list(date_set)'''
+
 output_file('index.html', title='temp')
 
 p = figure (
@@ -28,7 +32,7 @@ p = figure (
     title = "Plot Title",
     x_axis_label = "Date",
     y_axis_label= "Cost",
-    tools="pan,wheel_zoom,save,reset"
+    #tools="pan,wheel_zoom,save,reset"
 )
 
 # Add plot
