@@ -43,7 +43,8 @@ for i in range(len(field_list)):
         y='cost',
         source=source2,
         #legend = field_list[i],
-        color = (Category20[len(field)/5])[i]
+        color = (Category20[len(field)/5])[i],
+        line_width=2
     )
 
 # Add Tooltips
