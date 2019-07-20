@@ -1,7 +1,7 @@
 import numpy as np
 from bokeh.plotting import figure, output_file, show, save, ColumnDataSource
 from bokeh.models import ColumnDataSource, HoverTool
-from bokeh.palettes import Category10
+from bokeh.palettes import Category20
 import pandas
 
 # Read in csv
@@ -49,12 +49,8 @@ for i in range(len(field_list)):
         y='cost',
         source=source2,
         #legend = field_list[i],
-        color = (Category10[len(field)/5])[i]
+        color = (Category20[len(field)/5])[i]
     )
-
-
-
-
 
 
 

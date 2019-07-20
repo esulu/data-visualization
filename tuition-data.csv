@@ -5,12 +5,6 @@ Total field of study,2016 / 2017,8154
 Total field of study,2017 / 2018,8519
 Total field of study,2018 / 2019,8838
 
-2014 / 2015,
-2015 / 2016,
-2016 / 2017,
-2017 / 2018,
-2018 / 2019,
-
 Education, 2014 / 2015,6481
 Education, 2015 / 2016,6658
 Education, 2016 / 2017,6695
@@ -35,30 +29,86 @@ Social and behavioural sciences/legal studies,2016 / 2017,6463
 Social and behavioural sciences/legal studies,2017 / 2018,6636
 Social and behavioural sciences/legal studies,2018 / 2019,6825
 
-Law,15,147,15,479,19,663,20,615,21,614
+Law,2014 / 2015,15147
+Law,2015 / 2016,15479
+Law,2016 / 2017,19663
+Law,2017 / 2018,20615
+Law,2018 / 2019,21614
 
-Business, management and public administration,8,994,9,218,9,577,10,131,10,570
+Business management and public administration,2014 / 2015,8994
+Business management and public administration,2015 / 2016,9218
+Business management and public administration,2016 / 2017,9577
+Business management and public administration,2017 / 2018,10131
+Business management and public administration,2018 / 2019,10570
 
-Physical and life sciences and technologies,6,596,6,846,7,094,7,361,7,607
+Physical and life sciences and technologies,2014 / 2015,6596
+Physical and life sciences and technologies,2015 / 2016,6846
+Physical and life sciences and technologies,2016 / 2017,7094
+Physical and life sciences and technologies,2017 / 2018,7361
+Physical and life sciences and technologies,2018 / 2019,7607
 
-Mathematics, computer and information sciences,7,971,8,230,8,512,8,842,9,200
+Mathematics/computer and information sciences,2014 / 2015,7971
+Mathematics/computer and information sciences,2015 / 2016,8230
+Mathematics/computer and information sciences,2016 / 2017,8512
+Mathematics/computer and information sciences,2017 / 2018,8842
+Mathematics/computer and information sciences,2018 / 2019,9200
 
-Engineering,10,399,11,003,11,583,11,907,12,543
+Engineering,2014 / 2015,10399
+Engineering,2015 / 2016,11003
+Engineering,2016 / 2017,11583
+Engineering,2017 / 2018,11907
+Engineering,2018 / 2019,12543
 
-Architecture,7,706,8,061,8,322,8,485,8,846
+Architecture,2014 / 2015,7706
+Architecture,2015 / 2016,8061
+Architecture,2016 / 2017,8322
+Architecture,2017 / 2018,8485
+Architecture,2018 / 2019,8846
 
-Agriculture, natural resources and conservation,6,146,6,323,6,438,6,648,6,841
+Agriculture/natural resources and conservation,2014 / 2015,6146
+Agriculture/natural resources and conservation,2015 / 2016,6323
+Agriculture/natural resources and conservation,2016 / 2017,6438
+Agriculture/natural resources and conservation,2017 / 2018,6648
+Agriculture/natural resources and conservation,2018 / 2019,6841
 
-Dentistry,32,282,34,400,36,687,38,538,40,463
+Dentistry,2014 / 2015,32282
+Dentistry,2015 / 2016,34400
+Dentistry,2016 / 2017,36687
+Dentistry,2017 / 2018,38538
+Dentistry,2018 / 2019,40463
 
-Medicine,22,728,23,770,24,410,25,850,26,838
+Medicine,2014 / 2015,22728
+Medicine,2015 / 2016,23770
+Medicine,2016 / 2017,24410
+Medicine,2017 / 2018,25850
+Medicine,2018 / 2019,26838
 
-Nursing,6,209,6,401,6,573,6,776,6,972
+Nursing,2014 / 2015,6209
+Nursing,2015 / 2016,6401
+Nursing,2016 / 2017,6573
+Nursing,2017 / 2018,6776
+Nursing,2018 / 2019,6972
 
-Pharmacy,25,125,26,215,18,452,19,239,19,927
+Pharmacy,2014 / 2015,25125
+Pharmacy,2015 / 2016,26215
+Pharmacy,2016 / 2017,18452
+Pharmacy,2017 / 2018,19239
+Pharmacy,2018 / 2019,19927
 
-Veterinary medicine,7,526,7,869,8,133,8,540,8,967
+Veterinary medicine,2014 / 2015,7526
+Veterinary medicine,2015 / 2016,7869
+Veterinary medicine,2016 / 2017,8133
+Veterinary medicine,2017 / 2018,8540
+Veterinary medicine,2018 / 2019,8967
 
-Other health, parks, recreation and fitness,6,847,7,069,7,320,7,541,7,784
+Other health/parks/recreation and fitness,2014 / 2015,6847
+Other health/parks/recreation and fitness,2015 / 2016,7069
+Other health/parks/recreation and fitness,2016 / 2017,7320
+Other health/parks/recreation and fitness,2017 / 2018,7541
+Other health/parks/recreation and fitness,2018 / 2019,7784
 
-Personal, protective and transportation services,..,..,6,747,6,740,6,966
+Personal/protective and transportation services,2014 / 2015,..
+Personal/protective and transportation services,2015 / 2016,..
+Personal/protective and transportation services,2016 / 2017,6747
+Personal/protective and transportation services,2017 / 2018,6740
+Personal/protective and transportation services,2018 / 2019,6966
