@@ -2,7 +2,10 @@
 
 Visualization of data using the Bokeh library
 
-Note: currently a work in progress and data still needs to be cited 
+### Source  
+Statistics Canada.  [Table  37-10-0003-01   Canadian undergraduate tuition fees by field of study](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3710000301)
+
+Note: Only the data for Ontario is being used in this project
 
 ### Checklist
 - [x] Finish base code
@@ -13,4 +16,4 @@ Note: currently a work in progress and data still needs to be cited
 - [x] Change the thickness of the lines
 - [x] Optimize the code
 - [x] Add the title for the plot and the page
-- [ ] Cite the data
+- [x] Cite the data
