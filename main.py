@@ -16,23 +16,17 @@ date = source.data['date']
 
 field_list = df.field.unique()
 
-#dates = date.tolist()
-dates = ["2014 / 2015","2015 / 2016","2016 / 2017","2017 / 2018","2018 / 2019"]
+dates = df.date.unique().tolist()
 
-'''dates_list = dates.tolist()
-date_set = set(dates)
-dates = list(date_set)'''
-
-output_file('index.html', title='temp')
+output_file('index.html', title='Ontario Tuition Fees')
 
 p = figure (
     x_range=dates,
     plot_width = 800,
     plot_height= 600,
-    title = "Plot Title",
+    title = "Ontario undergraduate tuition fees by field of study",
     x_axis_label = "Date",
     y_axis_label= "Cost",
-    #tools="pan,wheel_zoom,save,reset"
 )
 
 # Add plot
@@ -51,23 +45,6 @@ for i in range(len(field_list)):
         #legend = field_list[i],
         color = (Category20[len(field)/5])[i]
     )
-
-
-
-#p = figure(width=500, height=300, x_axis_type="datetime") 
-
-# Problem: Making one line, so it connects all sections
-'''p.line(
-        y='cost',
-        x='date',
-        source=source
-    )'''
-
-# Problem: Multi line required a list of lists for the xs and ys
-'''p.multi_line(
-    xs= final_date, 
-    ys = final_cost,
-)'''
 
 # Add Tooltips
 hover = HoverTool()
