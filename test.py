@@ -48,7 +48,7 @@ for i in range(len(field_list)):
         x='date',
         y='cost',
         source=source2,
-        legend = field_list[i],
+        #legend = field_list[i],
         color = (Category10[3])[i]
     )
 
