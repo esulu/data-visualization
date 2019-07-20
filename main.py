@@ -60,7 +60,7 @@ hover.tooltips = """
 p.add_tools(hover)
 
 # Show results 
-#show(p)
+show(p)
 
 # Save file
-save(p)
+#save(p)
