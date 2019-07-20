@@ -49,7 +49,7 @@ for i in range(len(field_list)):
         y='cost',
         source=source2,
         #legend = field_list[i],
-        color = (Category10[3])[i]
+        color = (Category10[len(field)/5])[i]
     )
 
 
