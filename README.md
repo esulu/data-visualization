@@ -22,7 +22,7 @@ pipenv shell
 ```
 pipenv install bokeh pandas
 ```
-4. Run the main file to display tuition data
+4. Run the main file to display tuition data in a browser
 ```
 python main.py
 ```
