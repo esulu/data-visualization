@@ -20,6 +20,7 @@ dates = df.date.unique().tolist()
 
 output_file('index.html', title='Ontario Tuition Fees')
 
+# Create figure
 p = figure (
     x_range=dates,
     plot_width = 800,
